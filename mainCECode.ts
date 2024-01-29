@@ -1,8 +1,3 @@
-// CE  - need to test
-
-//for bookmark bar with token number and next refresh time with telegram FnO
-
-
 function clickSecondRefreshElement() {
     const elementsWithExactRefreshTitle = document.querySelectorAll('[title="Refresh"]');
     if (elementsWithExactRefreshTitle.length >= 1) {
@@ -48,10 +43,37 @@ function clickSecondRefreshElement() {
             //if (secondElement.textContent.trim() !== previousValue) {
 				if (secondElement.textContent.trim() !== '0 - 0 of 0') {
 					try {
-						var url=["https","://soundbible",".com/grab.php?id=1446&type=mp3"].join("");
+						
+						if (secondElement.textContent.trim() === '1 - 1 of 1'){
+						var url=["https","://soundbible",".com/grab.php?id=2182&type=mp3"].join("");
 						mCoinSound=new Audio(url);
 						mCoinSound.play();
 						console.log('Sound played successfully.');
+						}
+						if (secondElement.textContent.trim() === '1 - 2 of 2'){
+						var url=["https","://soundbible",".com/grab.php?id=2210&type=mp3"].join("");
+						mCoinSound=new Audio(url);
+						mCoinSound.play();
+						console.log('Sound played successfully.');
+						}
+						if (secondElement.textContent.trim() === '1 - 3 of 3'){
+						var url=["https","://soundbible",".com/grab.php?id=2218&type=mp3"].join("");
+						mCoinSound=new Audio(url);
+						mCoinSound.play();
+						console.log('Sound played successfully.');
+						}
+						if (secondElement.textContent.trim() === '1 - 4 of 4'){
+						var url=["https","://soundbible",".com/grab.php?id=2190&type=mp3"].join("");
+						mCoinSound=new Audio(url);
+						mCoinSound.play();
+						console.log('Sound played successfully.');
+						}
+						if (secondElement.textContent.trim() === '1 - 5 of 5'){
+						var url=["https","://soundbible",".com/grab.php?id=2197&type=mp3"].join("");
+						mCoinSound=new Audio(url);
+						mCoinSound.play();
+						console.log('Sound played successfully.');
+						}
 						try {
 							for (let i = 0; i <= 5; i++) {
 							//let msgText = "";
