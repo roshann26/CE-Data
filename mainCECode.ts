@@ -5,7 +5,7 @@
 
 function clickSecondRefreshElement() {
     const elementsWithExactRefreshTitle = document.querySelectorAll('[title="Refresh"]');
-    if (elementsWithExactRefreshTitle.length >= 2) {
+    if (elementsWithExactRefreshTitle.length >= 1) {
         const secondElement = elementsWithExactRefreshTitle[0];
         secondElement.click();
         console.log('Clicked First element [CE] with title "Refresh"');
@@ -19,7 +19,7 @@ function clickSecondRefreshElement() {
         let countdown = 60; // seconds
         const countdownInterval = setInterval(() => {
             countdown--;
-            process.stdout.write(`Next refresh in: ${countdown} seconds\r`);
+            console.log(`Next refresh in: ${countdown} seconds\r`);
             if (countdown === 0) {
                 clearInterval(countdownInterval);
                 console.log(); // Move to the next line after countdown finishes
@@ -74,7 +74,7 @@ function clickSecondRefreshElement() {
 										var msgText = "Your Queue has ticket with CaseNumber: " + spanText +" , Last refreshed at " + now.toLocaleTimeString();
 										
 										// Define the URL you want to make a request to
-										const url = "https://api.telegram.org/bot6040455031:AAGlQI5tkp23S4uYS2FQacJRo5RCNDA-BKk/sendMessage?chat_id=-1002089818313&text="+msgText;
+										const url = "https://api.telegram.org/bot6040455031:AAGlQI5tkp23S4uYS2FQacJRo5RCNDA-BKk/sendMessage?chat_id=-1002047420080&text="+msgText;
 
 										// Use fetch to make a GET request to the URL
 										fetch(url)
@@ -134,7 +134,7 @@ function clickSecondRefreshElement() {
             console.log('Less than two elements found');
         }
     } else {
-        console.log('Second element with title "Refresh" not found');
+        console.log('First element with title "Refresh" not found');
     }
 }
 clickSecondRefreshElement();
