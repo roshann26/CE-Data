@@ -160,4 +160,4 @@ function clickSecondRefreshElement() {
     }
 }
 clickSecondRefreshElement();
-setInterval(clickSecondRefreshElement, 60000);
+setInterval(clickSecondRefreshElement, 300000);
